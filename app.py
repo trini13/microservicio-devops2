@@ -26,5 +26,9 @@ def no_encontrado(error):
 def info():
     return jsonify({"servicio": "microservicio-devops", "equipo": "trini13", "estado": "activo"})
 
+@app.route('/estado')
+def estado():
+    return jsonify({"servicio": "activo", "uptime": "100%", "ambiente": "desarrollo"})
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
