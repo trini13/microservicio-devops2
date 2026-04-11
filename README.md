@@ -108,3 +108,17 @@ El archivo `.github/workflows/ci.yml` se ejecuta automáticamente:
 Se utilizó Perplexity AI como apoyo para revisar estructura de archivos YAML y formato Markdown.
 Todas las decisiones técnicas fueron revisadas y validadas por el equipo.
 Referencia: https://bibliotecas.duoc.cl/ia
+
+---
+
+## Reflexión Personal
+
+Durante el desarrollo de este encargo aprendímos a crear un repositorio en GitHub con 4 ramas: `main`, que es la rama principal donde se encuentra el producto en producción; `develop`, donde se realizan los cambios e integraciones; `feature/agregar-endpoint`, donde agregamos nuevas funcionalidades al código; y `hotfix`, que se usa para corregir errores urgentes directamente desde `main`.
+
+Tuve un problema de credenciales, ya que mi PC tenía asociada otra cuenta de GitHub. Lo resolví eliminando las credenciales guardadas en el Administrador de credenciales de Windows y volviendo a autenticarme con mi cuenta correcta.
+
+También aprendimos a crear Pull Requests, donde se comparan los cambios entre ramas y se hace el merge para integrarlos. Creamos los archivos base del microservicio: `app.py`, que contiene la aplicación Flask; `requirements.txt`, con las dependencias; y `.gitignore`, para excluir archivos innecesarios. El archivo `README.md` funciona como la portada del repositorio, donde se documenta todo el proyecto para que cualquier persona del equipo pueda entender cómo está organizado y cómo trabajar en él. Además configuramos el pipeline CI/CD creando la carpeta `.github/workflows/` con el archivo `ci.yml`, que se ejecuta automáticamente con cada push a `develop`.
+
+Aprendimos comandos como `git clone`, `git checkout`, `git add`, `git commit` y `git push`. Aunque aún no los manejamos a la perfección, entendimos conceptos que desconociamos y siento que avanzamos bastante en este tema.
+
+Este encargo lo realicé en conjunto con mi compañero Sebastián Antipán. nos coordinamos a través de Discord para organizar el trabajo, resolver dudas y avanzar juntos en cada etapa del repositorio.
