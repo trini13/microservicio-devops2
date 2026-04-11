@@ -30,5 +30,9 @@ def info():
 def estado():
     return jsonify({"servicio": "activo", "uptime": "100%", "ambiente": "desarrollo"})
 
+@app.errorhandler(500)
+def error_servidor(error):
+    return jsonify({"error": "Error interno del servidor", "codigo": 500}), 500
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
