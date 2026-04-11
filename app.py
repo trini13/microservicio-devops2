@@ -22,5 +22,9 @@ def version():
 def no_encontrado(error):
     return jsonify({"error": "Ruta no encontrada", "codigo": 404}), 404
 
+@app.route('/info')
+def info():
+    return jsonify({"servicio": "microservicio-devops", "equipo": "trini13", "estado": "activo"})
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
