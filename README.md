@@ -122,3 +122,18 @@ También aprendimos a crear Pull Requests, donde se comparan los cambios entre r
 Aprendimos comandos como `git clone`, `git checkout`, `git add`, `git commit` y `git push`. Aunque aún no los manejamos a la perfección, entendimos conceptos que desconociamos y siento que avanzamos bastante en este tema.
 
 Este encargo lo realicé en conjunto con mi compañero Sebastián Antipán. nos coordinamos a través de Discord para organizar el trabajo, resolver dudas y avanzar juntos en cada etapa del repositorio.
+
+
+---
+## 🛠️ Guía de Buenas Prácticas (Contribución de Seba)
+
+Para cumplir con los estándares de calidad del proyecto, definimos:
+
+* **Estrategia de Ramificación:** Usamos **GitFlow** para asegurar trazabilidad.
+* **Naming de Ramas:** * `feature/` para nuevas funciones.
+    * `hotfix/` para errores en producción.
+* **Convención de Commits:** Usamos el formato `tipo: descripción` (ej. `feat: agregar validación`).
+* **Revisión de Código:** Todo cambio a `main` debe pasar por un **Pull Request**.
+
+## 📝 Reflexión Personal - Seba
+En esta actividad, aprendí a entender cómo trabajar de forma colaborativa sin pisar el código de mi compañero mediante el correcto uso de repositorios GitHub. Al principio me costó entender el flujo de ramas, pero logré crear mi propia rama feature para añadir la documentación técnica y las buenas prácticas. Esto me hizo comprender la importancia de la comunicación y el orden en los commits a la hora de trabajar en equipo, para que todo funcione bien y el pipeline no encuentre errores innecesarios.
